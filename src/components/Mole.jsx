@@ -2,10 +2,10 @@
    
 import { useEffect } from 'react'
 import moleImg from '../mole.png'
-let moleStyle={'width': '30vw'}
+//const moleStyle={'width': '30vw'}
 
 
-const Mole = (handleClick,toggle) => {
+const Mole = ({handleClick,toggle}) => {
 
     useEffect(() => {
         let Seconds = Math.ceil(Math.random() * 10000)
@@ -19,7 +19,7 @@ const Mole = (handleClick,toggle) => {
   
     return (
         <div>
-            <img style={moleStyle} src={moleImg} alt ="image" onClick={handleClick} />
+            <img  src={moleImg} alt ="image" onClick={handleClick} />
         </div>
     )
 }

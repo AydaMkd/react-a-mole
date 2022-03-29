@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import MoleHill from '../molehill.png'
-let moleStyle={'width': '30vw'}
+//const moleStyle={'width': '30vw'}
 
 const EmptySlot = ({toggle}) => {
 
@@ -15,7 +15,7 @@ const EmptySlot = ({toggle}) => {
     return (
         
         <div>
-            <img style={moleStyle} src={MoleHill} alt ="" />
+            <img src={MoleHill} alt ="" />
         </div>
     )
 }

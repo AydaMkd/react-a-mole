@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import Mole from './Mole'
 import EmptySlot from './EmptySlot'
-const moleContainStyle={'display': 'inline-block', 'width': '30ww'}
+const moleContainStyle={'display': 'inline-block', 'width': '90ww'}
 
 
-const MoleContainer = (score, setScore) => {
+const MoleContainer = ({score, setScore}) => {
     let [theMole, setTheMole] = useState(false)
 
     const handleClick = (e) => {
@@ -16,7 +16,7 @@ const MoleContainer = (score, setScore) => {
     
 
     return (
-        <div style={moleContainStyle}>
+        <div className="moleStyle">
             {displayMole}
         </div>
     )
